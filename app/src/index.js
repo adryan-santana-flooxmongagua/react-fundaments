@@ -1,7 +1,11 @@
 import ReactDom from 'react-dom'
 import React from 'react'
 
+const tag = <strong>Olá react!</strong> 
+
 ReactDom.render(
-    <div>Olá react!</div>,
+    <div>
+        {tag}
+    </div>,
     document.getElementById('root')
 )
