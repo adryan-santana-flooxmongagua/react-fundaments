@@ -6,6 +6,7 @@ import ComParametro from "./components/basic/ComParametro";
 import Fragment from "./components/basic/Fragmento";
 import Aleatory from "./components/basic/Aleatory";
 import Card from "./components/layout/Card";
+import Family from "./components/basic/family";
 
 export default () => {
   return (
@@ -13,7 +14,11 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
-        <Card titulo="#04 - Desafio Aleatorio">
+        <Card titulo="#05 - Comp Filho">
+          <Family surname="lopez"/>
+        </Card>
+
+          <Card titulo="#04 - Desafio Aleatorio">
           <Aleatory min={1} max={60} />
         </Card>
 
