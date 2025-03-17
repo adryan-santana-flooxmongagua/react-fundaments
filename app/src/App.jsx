@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import ReactDom from "react-dom";
+import Parimp from "./components/conditional/Parimp";
 import First from "./components/basic/First";
 import StudentList from "./components/repetition/StudentList";
 import ComParametro from "./components/basic/ComParametro";
@@ -17,11 +18,15 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
-        <Card titulo="#06 - Comp Filho">
+        <Card titulo="#08 - render condicional">
+          <Parimp numero={20}> </Parimp>
+        </Card>
+        
+        <Card titulo="#07 - produt">
           <TableProduct/>
         </Card>
         
-        <Card titulo="#06 - Comp Filho">
+        <Card titulo="#06 - lista de alunos">
           <StudentList/>
         </Card>
         
