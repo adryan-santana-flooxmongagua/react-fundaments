@@ -16,6 +16,7 @@ import Fatherdirect from "./components/comunication/Fatherdirect";
 import IndiretaPai from "./components/comunication/IndirectFatther";
 import Input from "./components/forms/Input";
 import Contador from "./components/counter/Counter";
+import Mega from "./components/mega/Mega";
 
 export default () => {
   return (
@@ -23,15 +24,17 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
+        <Card titulo="#13 - Mega">
+          <Mega qtde={8}></Mega>
+        </Card>
 
-      
-      <Card titulo="#12 - Contador" color="#424242">
-                <Contador numeroInicial={10}></Contador>
-            </Card>
+        <Card titulo="#12 - Contador">
+          <Contador numeroInicial={10}></Contador>
+        </Card>
 
-      <Card titulo="#11 - Componente Controlado (Input)">
-                <Input></Input>
-            </Card>
+        <Card titulo="#11 - Componente Controlado (Input)">
+          <Input></Input>
+        </Card>
 
         <Card titulo="#10 - Comunicação Indireta">
           <IndiretaPai></IndiretaPai>
