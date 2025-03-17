@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import ReactDom from "react-dom";
+import Userinfo from "./components/conditional/Userinfo";
 import Parimp from "./components/conditional/Parimp";
 import First from "./components/basic/First";
 import StudentList from "./components/repetition/StudentList";
@@ -20,6 +21,7 @@ export default () => {
       <div className="Cards">
         <Card titulo="#08 - render condicional">
           <Parimp numero={20}> </Parimp>
+          <Userinfo usuario={{nome: 'edk'}} ></Userinfo>
         </Card>
         
         <Card titulo="#07 - produt">
