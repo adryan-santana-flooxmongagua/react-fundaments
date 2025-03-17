@@ -12,6 +12,7 @@ import Card from "./components/layout/Card";
 import Family from "./components/basic/family";
 import MemberFamily from "./components/basic/memberFamily";
 import TableProduct from "./components/repetition/TableProduct";
+import Fatherdirect from "./components/comunication/Fatherdirect";
 
 export default () => {
   return (
@@ -19,28 +20,32 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
+        <Card titulo="#09 - Comunicação Direta">
+          <Fatherdirect></Fatherdirect>
+        </Card>
+
         <Card titulo="#08 - render condicional">
           <Parimp numero={20}> </Parimp>
-          <Userinfo usuario={{nome: 'edk'}} ></Userinfo>
+          <Userinfo usuario={{ nome: "edk" }}></Userinfo>
         </Card>
-        
+
         <Card titulo="#07 - produt">
-          <TableProduct/>
+          <TableProduct />
         </Card>
-        
+
         <Card titulo="#06 - lista de alunos">
-          <StudentList/>
+          <StudentList />
         </Card>
-        
+
         <Card titulo="#05 - Comp Filho">
           <Family surname="lopez">
-          <MemberFamily name="Pedro" />
-          <MemberFamily name="Edk" />
-          <MemberFamily name="Pifio"/>
+            <MemberFamily name="Pedro" />
+            <MemberFamily name="Edk" />
+            <MemberFamily name="Pifio" />
           </Family>
         </Card>
 
-          <Card titulo="#04 - Desafio Aleatorio">
+        <Card titulo="#04 - Desafio Aleatorio">
           <Aleatory min={1} max={60} />
         </Card>
 
