@@ -13,11 +13,17 @@ import Family from "./components/basic/family";
 import MemberFamily from "./components/basic/memberFamily";
 import TableProduct from "./components/repetition/TableProduct";
 import Fatherdirect from "./components/comunication/Fatherdirect";
+import IndiretaPai from "./components/comunication/IndirectFatther";
+
 
 export default () => {
   return (
     <div className="App">
       <h1>Fundamentos do React 2</h1>
+
+      <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
 
       <div className="Cards">
         <Card titulo="#09 - Comunicação Direta">
