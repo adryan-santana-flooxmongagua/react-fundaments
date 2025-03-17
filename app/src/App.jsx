@@ -15,6 +15,7 @@ import TableProduct from "./components/repetition/TableProduct";
 import Fatherdirect from "./components/comunication/Fatherdirect";
 import IndiretaPai from "./components/comunication/IndirectFatther";
 import Input from "./components/forms/Input";
+import Contador from "./components/counter/Counter";
 
 export default () => {
   return (
@@ -22,6 +23,11 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
+
+      
+      <Card titulo="#12 - Contador" color="#424242">
+                <Contador numeroInicial={10}></Contador>
+            </Card>
 
       <Card titulo="#11 - Componente Controlado (Input)">
                 <Input></Input>
