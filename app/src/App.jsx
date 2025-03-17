@@ -9,7 +9,7 @@ import Aleatory from "./components/basic/Aleatory";
 import Card from "./components/layout/Card";
 import Family from "./components/basic/family";
 import MemberFamily from "./components/basic/memberFamily";
-
+import TableProduct from "./components/repetition/TableProduct";
 
 export default () => {
   return (
@@ -17,6 +17,10 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
+        <Card titulo="#06 - Comp Filho">
+          <TableProduct/>
+        </Card>
+        
         <Card titulo="#06 - Comp Filho">
           <StudentList/>
         </Card>
