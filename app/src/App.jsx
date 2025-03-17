@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import ReactDom from "react-dom";
 import First from "./components/basic/First";
+import StudentList from "./components/repetition/StudentList";
 import ComParametro from "./components/basic/ComParametro";
 import Fragment from "./components/basic/Fragmento";
 import Aleatory from "./components/basic/Aleatory";
@@ -16,6 +17,10 @@ export default () => {
       <h1>Fundamentos do React 2</h1>
 
       <div className="Cards">
+        <Card titulo="#06 - Comp Filho">
+          <StudentList/>
+        </Card>
+        
         <Card titulo="#05 - Comp Filho">
           <Family surname="lopez">
           <MemberFamily name="Pedro" />
